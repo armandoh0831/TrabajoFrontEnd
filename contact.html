@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contáctanos — CES</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="assets/images/logo-placeholder.png" alt="CES Logo" class="logo" />
+      <div class="brand-text">
+        <h1>CES</h1>
+        <p class="slogan">Expertos en soluciones CRM personalizadas</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="plans.html">Nuestros Planes</a>
+      <a href="about.html">Nuestra Empresa</a>
+      <a href="contact.html" class="btn btn-primary active">Contáctanos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero hero-contact">
+    <div class="hero-inner">
+      <h2>Contáctanos</h2>
+      <p>Completa el siguiente formulario y uno de nuestros especialistas se comunicará contigo en menos de 24 horas.</p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="container contact-form">
+    <h3>Formulario de contacto</h3>
+    <form id="contactForm">
+      <div class="form-grid">
+        <div>
+          <label for="name">Nombre*</label>
+          <input id="name" name="name" required />
+        </div>
+        <div>
+          <label for="lastname">Apellido*</label>
+          <input id="lastname" name="lastname" required />
+        </div>
+        <div>
+          <label for="email">Correo Electrónico*</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div>
+          <label for="phone">Número de teléfono</label>
+          <input id="phone" name="phone" />
+        </div>
+        <div>
+          <label for="company">Nombre de la empresa*</label>
+          <input id="company" name="company" required />
+        </div>
+        <div>
+          <label for="industry">Industria*</label>
+          <select id="industry" name="industry" required>
+            <option value="">Selecciona</option>
+            <option>Finanzas</option>
+            <option>Tecnología</option>
+            <option>Salud</option>
+            <option>Retail</option>
+          </select>
+        </div>
+        <div>
+          <label for="employees">Número de empleados*</label>
+          <input id="employees" name="employees" type="number" required />
+        </div>
+      </div>
+
+      <fieldset>
+        <legend>CRM*</legend>
+        <label><input type="radio" name="crm" value="HubSpot" required /> HubSpot</label>
+        <label><input type="radio" name="crm" value="Salesforce" /> Salesforce</label>
+        <label><input type="radio" name="crm" value="Zoho CRM" /> Zoho CRM</label>
+        <label><input type="radio" name="crm" value="Dynamics 365" /> Dynamics 365</label>
+        <label><input type="radio" name="crm" value="Zendesk" /> Zendesk</label>
+        <label><input type="radio" name="crm" value="Otro" /> Otro</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Plan*</legend>
+        <label><input type="radio" name="plan" value="Crecimiento" required /> Crecimiento</label>
+        <label><input type="radio" name="plan" value="Profesional" /> Profesional</label>
+        <label><input type="radio" name="plan" value="Empresas" /> Empresas</label>
+      </fieldset>
+
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+  </section>
+</main>
+
+<!-- CHATBOT -->
+<div id="chatbot" class="chatbot-closed">
+  <button id="chat-toggle" class="chat-toggle">💬</button>
+  <div id="chat-window" class="chat-window" aria-hidden="true">
+    <div class="chat-header">¿Tienes preguntas? Somos expertos en CRMs.</div>
+    <div class="chat-body" id="chat-body">
+      <div class="bot">Hola, ¿en qué podemos ayudarte?</div>
+    </div>
+    <form id="chatForm" class="chat-form">
+      <input id="chatInput" placeholder="Escribe tu pregunta..." autocomplete="off" />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <p>© CES - CRM Experts. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
